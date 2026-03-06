@@ -414,6 +414,11 @@ export default function PalmAI() {
   );
 }
 
+const G    = "'Cormorant Garamond',Georgia,serif";
+const J    = "'Josefin Sans',sans-serif";
+const SC   = "'Cormorant SC',serif";
+const GOLD = "#D4A843";
+
 const S = {
   root:   { minHeight:"100vh", background:"#05020c", fontFamily:G, color:"#e8d5a8", position:"relative", overflow:"hidden" },
   sf:     { position:"fixed", inset:0, pointerEvents:"none", zIndex:0 },
