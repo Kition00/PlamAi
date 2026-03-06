@@ -337,7 +337,6 @@ export default function PalmAI() {
 
           {/* CENTER: changes with phase */}
           <div style={S.mid}>{renderCenter()}</div>
-          </div>
         </div>
       </section>
 
