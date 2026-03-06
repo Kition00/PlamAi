@@ -324,18 +324,15 @@ export default function PalmAI() {
       <section style={S.hero} ref={heroRef}>
         <div style={S.m1}><Mandala size={520} op={0.06}/></div>
         <div style={S.m2}><Mandala size={340} op={0.04}/></div>
-
         <div className="HI" style={S.grid}>
-
-          {/* LEFT: Guru PNG — transparent bg */}
+          {/* LEFT: Guru */}
           <div style={S.col}>
             <div style={S.gg}/>
             <img src={GURU} alt="Guru Hastalakshmi" style={S.gi} draggable={false}/>
             <span style={S.gname}>Guru Hastalakshmi</span>
             <span style={S.grole}>Vedic Master Palmist · 40 Years</span>
           </div>
-
-          {/* CENTER: changes with phase */}
+          {/* CENTER */}
           <div style={S.mid}>{renderCenter()}</div>
         </div>
       </section>
@@ -350,7 +347,6 @@ export default function PalmAI() {
             <button style={{...S.tabBtn,...(tab==="lines"?S.ta:{})}} onClick={()=>setTab("lines")}>Major Lines</button>
             <button style={{...S.tabBtn,...(tab==="types"?S.ta:{})}} onClick={()=>setTab("types")}>Hand Types</button>
           </div>
-
           {tab==="lines" && (
             <div style={S.linesGrid}>
               {LINES.map(l=>(
@@ -368,7 +364,6 @@ export default function PalmAI() {
               ))}
             </div>
           )}
-
           {tab==="types" && (
             <div style={S.typesGrid}>
               {TYPES.map(t=>(
@@ -391,7 +386,7 @@ export default function PalmAI() {
         <div style={S.si}>
           <p style={S.ey}>More Offerings</p>
           <h2 style={S.et2}>Deepen Your Reading</h2>
-          <p style={S.ed}>Beyond your free reading, explore the full range of Vedic services.</p>
+          <p style={S.ed}>Beyond your free reading, explore the full range of sacred Vedic services.</p>
           <div style={S.svgrid}>
             {SERVICES.map(s=>(
               <div key={s.name} className="svcCard" style={S.scard}>
@@ -418,12 +413,6 @@ export default function PalmAI() {
     </div>
   );
 }
-
-// ─── Styles ──────────────────────────────────────────────────
-const G = "'Cormorant Garamond',Georgia,serif";
-const J = "'Josefin Sans',sans-serif";
-const SC= "'Cormorant SC',serif";
-const GOLD = "#D4A843";
 
 const S = {
   root:   { minHeight:"100vh", background:"#05020c", fontFamily:G, color:"#e8d5a8", position:"relative", overflow:"hidden" },
