@@ -1,8 +1,8 @@
 'use client'
 import { useState, useCallback } from 'react'
-import Nav from '@/components/Nav'
-import PaymentModal from '@/components/PaymentModal'
-import { translations, DEFAULT_LANG } from '@/lib/i18n/translations'
+import Nav from '../components/Nav'
+import PaymentModal from '../components/PaymentModal'
+import { translations, DEFAULT_LANG } from '../lib/i18n/translations'
 
 // ── Tarot deck ────────────────────────────────────────────────
 const TAROT_CARDS = [

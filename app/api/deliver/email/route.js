@@ -1,7 +1,7 @@
 // app/api/deliver/email/route.js
 import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server'
-import { generatePDFReport } from '@/lib/pdf/generateReport'
+import { generatePDFReport } from '../../lib/pdf/generateReport'
 
 const transporter = nodemailer.createTransport({
   host:   process.env.SMTP_HOST   || 'smtp.gmail.com',

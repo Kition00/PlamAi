@@ -1,7 +1,7 @@
 // app/api/deliver/whatsapp/route.js
 import twilio from 'twilio'
 import { NextResponse } from 'next/server'
-import { generatePDFReport } from '@/lib/pdf/generateReport'
+import { generatePDFReport } from '../../lib/pdf/generateReport'
 
 const client = twilio(
   process.env.TWILIO_ACCOUNT_SID,
