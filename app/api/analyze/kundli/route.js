@@ -2,7 +2,7 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextResponse } from 'next/server'
 
-const client = new Anthropic()
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 const SYSTEM = {
   en: 'You are a master Vedic astrologer with deep knowledge of Jyotish Shastra. Respond in English. Return ONLY valid JSON, no markdown, no preamble.',
